@@ -11,10 +11,67 @@
 </head>
 <body>
 
-<div class="alert alert-primary heye" role="alert">
-  A simple primary alert—check it out!
-  <i class="fab fa-twitter"></i>
+<header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#hero">Brian Scanlon</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><i class="far fa-address-card"></i> About<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-graduation-cap"></i> Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" ><i class="fas fa-tasks"></i> Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" ><i class="fas fa-briefcase"></i> Work Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" ><i class="far fa-envelope"></i> Contact</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+</header>
+
+<div class="container-fluid darkest-bg">
+	<div class="row" id="hero">
+		<div class="col">
+            <div class="main-pic">
+                <div class="main-pic-text p-3">
+                    <div class="">
+                        <img class="profile-pic rounded-circle w-50" 
+                        src="https://www.chicagotribune.com/resizer/yFMZ9O1PmiLd-Xz1CAgWuuTcyZ0=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/7SDBJS4IGFGABH6J3OF5TWNONE.jpg" 
+                        alt="Tough Penguin">
+                    </div>
+                    <h1 class="text-white hero-heading p-3 border-bottom w-50 mx-auto">Brian Scanlon</h1>
+                    <!-- scrolls to more info section -->
+                    <div class="mx-auto mt-3">
+                        <a href="#" class="p-1 text-white btn btn-outline-success" data-toggle="tooltip" data-placement="right" title="Send email">Contact Me</a>
+                        <a href="#" class="p-1 text-white btn btn-outline-success" data-toggle="tooltip" data-placement="right" title="Cv in pdf">Download CV</a> 
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
 </div>
-    
+
+<button id="topBtn" title="To top" class="bg-transparent">
+    <!-- clicking this arrow brings user back to top of page -->
+    <i class="fas fa-arrow-circle-up fa-5x"></i>
+</button>
+
 </body>
 </html>
