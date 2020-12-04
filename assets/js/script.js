@@ -3,7 +3,7 @@ $(document).ready(function() {
 function scrollToTop() {
     let mybutton = document.getElementById("toTop");
 
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
     mybutton.style.display = "block";
     } else {
     mybutton.style.display = "none";
@@ -12,6 +12,8 @@ function scrollToTop() {
 
 window.addEventListener('scroll', function(e) {
     scrollToTop()
+});
+
 });
 
 let firstYHead = document.getElementById("nav-first-tab");
@@ -76,5 +78,3 @@ function firstYear() {
 
     firstYTab.classList.add("active", "show");
 }
-
-});
