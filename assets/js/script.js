@@ -3,7 +3,7 @@ $(document).ready(function() {
 function scrollToTop() {
     let mybutton = document.getElementById("toTop");
 
-    if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     mybutton.style.display = "block";
     } else {
     mybutton.style.display = "none";
@@ -12,6 +12,15 @@ function scrollToTop() {
 
 window.addEventListener('scroll', function(e) {
     scrollToTop()
+});
+
+function topPage() {
+    document.body.scrollTo({top: 0, behavior: 'smooth'});
+    document.documentElement.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+$('#toTop').click(function(){
+    topPage();
 });
 
 });
