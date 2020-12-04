@@ -67,7 +67,8 @@
                     <!-- scrolls to more info section -->
                     <div class="mx-auto mt-3">
                         <a href="#" class="p-1 text-white btn btn-outline-success" data-toggle="tooltip" data-placement="right" title="Send email">Contact Me</a>
-                        <a href="#" class="p-1 text-white btn btn-outline-success" data-toggle="tooltip" data-placement="right" title="Cv in pdf">Download CV</a> 
+                        <a href="assets/files/testCV.pdf" target="_blank" class="p-1 text-white btn btn-outline-success" 
+                        data-toggle="tooltip" data-placement="right" title="Cv in pdf">Download CV</a> 
                     </div>
                 </div>
             </div>
@@ -78,7 +79,7 @@
 <div class="container-fluid" id="about">
     <div class="row my-4">
         <div class="col mx-auto centered">
-            <h2 class=" p-3 border-bottom w-25 mx-auto">About Me</h2>
+            <h2 class="p-3 border-bottom w-25 mx-auto">About Me</h2>
         </div>
 	</div>
     <div class="row my-4">
@@ -94,8 +95,8 @@
 
 <div class="container-fluid" >
     <div class="row">
-        <div class="col-12 col-sm-8 mx-auto" >
-            <h2 class="p-3 centered" id="education">Education</h2>
+        <div class="col-6 col-sm-3  mx-auto centered" >
+            <h2 class="centered border-bottom p-3" id="education">Education</h2>
         </div>
     </div>
     <div class="row my-4">
@@ -110,7 +111,7 @@
                     </button>
                 </h2>
                 </div>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
                     <div class="row">
                         <div class="col-6 col-sm-4 ml-auto mr-2">
@@ -239,7 +240,7 @@
                 
                 <div class="card-body centered">
                 <div class="row">
-                    <div class="col mx-auto"><h3>1st Year</h3>
+                    <div class="col-3 mx-auto"><h3>1st Year</h3>
                         <p>
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry yes terry, tommy & ted.
                         </p>
@@ -250,7 +251,7 @@
                             <u type="button" onclick="firstYear()" class="btn btn-primary" data-toggle="modal" data-target="#bachGrades">View Grades</u>
                         </p>
                     </div>
-                    <div class="col mx-auto">
+                    <div class="col-3 mx-auto">
                     <h3>2nd Year</h3>
                         <p>
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
@@ -262,7 +263,7 @@
                             <u type="button" onclick="secondYear()" class="btn btn-primary" data-toggle="modal" data-target="#bachGrades">View Grades</u>
                         </p>
                     </div>
-                    <div class="col mx-auto">
+                    <div class="col-3 mx-auto">
                     <h3>3rd Year</h3>
                         <p>
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad 
@@ -274,13 +275,13 @@
                             <u type="button" onclick="thirdYear()" class="btn btn-primary" data-toggle="modal" data-target="#bachGrades">View Grades</u>
                         </p>
                     </div>
-                    <div class="col mx-auto">
+                    <div class="col-3 mx-auto">
                     <h3>4th Year</h3>
                         <p>
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid
                         </p>
                         <p>
-                            Module included lorem cliche reprehenderit, enim eiusmod high, some others ones, testiinnnnnnnnnnnnnggggggggggggggggg 
+                            Module included lorem cliche reprehenderit, enim eiusmod high, some others ones,
                             this one...
                         </p>
                         <p>
@@ -296,17 +297,256 @@
                         <div class="modal-body">
                             <nav>
                             <div class="nav nav-tabs" id="nav-tab myDIV" role="tablist">
-                                <a class="nav-link" id="nav-first-tab" data-toggle="tab" href="#nav-first" role="tab" aria-controls="nav-first" aria-selected="true">first</a>
-                                <a class="nav-link" id="nav-second-tab" data-toggle="tab" href="#nav-second" role="tab" aria-controls="nav-second" aria-selected="true">second</a>
-                                <a class="nav-link" id="nav-third-tab" data-toggle="tab" href="#nav-third" role="tab" aria-controls="nav-third" aria-selected="false">third</a>
-                                <a class="nav-link" id="nav-fourth-tab" data-toggle="tab" href="#nav-fourth" role="tab" aria-controls="nav-fourth" aria-selected="false">Fourth</a>
+                                <a class="nav-link" id="nav-first-tab" data-toggle="tab" href="#nav-first" role="tab" aria-controls="nav-first" aria-selected="true">First Year</a>
+                                <a class="nav-link" id="nav-second-tab" data-toggle="tab" href="#nav-second" role="tab" aria-controls="nav-second" aria-selected="true">Second Year</a>
+                                <a class="nav-link" id="nav-third-tab" data-toggle="tab" href="#nav-third" role="tab" aria-controls="nav-third" aria-selected="false">Third Year</a>
+                                <a class="nav-link" id="nav-fourth-tab" data-toggle="tab" href="#nav-fourth" role="tab" aria-controls="nav-fourth" aria-selected="false">Fourth Year</a>
                             </div>
                             </nav>
                             <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade" id="nav-first" role="tabpanel" aria-labelledby="nav-first-tab">...</div>
-                                <div class="tab-pane fade" id="nav-second" role="tabpanel" aria-labelledby="nav-second-tab">...</div>
-                                <div class="tab-pane fade" id="nav-third" role="tabpanel" aria-labelledby="nav-third-tab">...</div>
-                                <div class="tab-pane fade" id="nav-fourth" role="tabpanel" aria-labelledby="nav-fourth-tab">...</div>
+                                <div class="tab-pane fade" id="nav-first" role="tabpanel" aria-labelledby="nav-first-tab">
+                                    <div class="col my-4">
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2"><strong>Module</strong></span>
+                                            </div>
+                                            <div class="col-4 pr-0 centered">
+                                                <span class="pl-5"><strong>Grade</strong></span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Continuum Mechanics</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">A-</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Professional Engineering Management</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">B</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Nanomaterials</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">A</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Business Information Systems</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">B-</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Process Control</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">B</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Thesis</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">A+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-second" role="tabpanel" aria-labelledby="nav-second-tab">
+                                    <div class="col my-4">
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2"><strong>Module</strong></span>
+                                            </div>
+                                            <div class="col-4 pr-0 centered">
+                                                <span class="pl-5"><strong>Grade</strong></span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Continuum Mechanics</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">A-</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Professional Engineering Management</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">B</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Nanomaterials</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">A</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Business Information Systems</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">B-</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Process Control</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">B</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Thesis</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">A+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-third" role="tabpanel" aria-labelledby="nav-third-tab">
+                                    <div class="col my-4">
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2"><strong>Module</strong></span>
+                                            </div>
+                                            <div class="col-4 pr-0 centered">
+                                                <span class="pl-5"><strong>Grade</strong></span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Continuum Mechanics</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">A-</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Professional Engineering Management</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">B</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Nanomaterials</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">A</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Business Information Systems</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">B-</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Process Control</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">B</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Thesis</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">A+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-fourth" role="tabpanel" aria-labelledby="nav-fourth-tab">
+                                    <div class="col my-4">
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2"><strong>Module</strong></span>
+                                            </div>
+                                            <div class="col-4 pr-0 centered">
+                                                <span class="pl-5"><strong>Grade</strong></span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Continuum Mechanics</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">A-</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Professional Engineering Management</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">B</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Nanomaterials</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">A</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Business Information Systems</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">B-</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Process Control</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">B</span>
+                                            </div>
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-8 p-0 mr-auto">
+                                                <span class="text-left pl-2">Thesis</span>
+                                            </div>
+                                            <div class="col-4 centered pr-0">
+                                                <span class="pl-5">A+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-right pr-5 mr-3">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
                                 </div>
                                 </div>
                             </div>
@@ -347,7 +587,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="col my-4">
-                                        <div class="row border-bottom">
+                                        <div class="row border-bottom pb-2">
                                             <div class="col-8 p-0 mr-auto">
                                                 <span class="text-left"><strong>Project</strong></span>
                                             </div>
