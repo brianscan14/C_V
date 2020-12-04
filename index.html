@@ -13,7 +13,7 @@
 
 <header>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
   <a class="navbar-brand nav-name" href="#hero"><strong>Brian Scanlon</strong></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" 
   aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,27 +22,31 @@
 
   <div class="collapse navbar-collapse" id="navbarToggler">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item">
+      <li class="nav-item px-2">
         <a class="nav-link" href="#about"><i class="far fa-address-card"></i> About<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item px-2">
         <a class="nav-link" href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item px-2">
         <a class="nav-link" href="#" ><i class="fas fa-tasks"></i> Projects</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item px-2">
         <a class="nav-link" href="#" ><i class="fas fa-briefcase"></i> Work Experience</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item px-2">
         <a class="nav-link" href="#" ><i class="far fa-envelope"></i> Contact</a>
       </li>
     </ul>
-    <span>
-        <i class="fas fa-search fa-2x d-none d-lg-inline-block pr-3" id="openSearch"
-            data-toggle="tooltip" data-placement="bottom"></i>
-        <span class="nav-search-bar d-lg-none nav-link">Search</span>
-    </span>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item px-2">
+            <span id="openSearch">
+                <i class="fas fa-search fa-3x d-none d-lg-inline-block pr-3" data-toggle="tooltip" data-placement="bottom"></i>
+                <i class="fas fa-search d-lg-none nav-link"> Search</i>
+            </span>
+      </li>
+    </ul>
+    
     
     <div id="searchArea" class="overlay">
         <a href="javascript:void(0)" id="closeSearch" class="close-nav-search text-dark">&times;</a>
