@@ -3,7 +3,24 @@
     text-align: center
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Sansita+Swashed:wght@700&display=swap');
+
+
+/* navbar area--------------- */
+
+
+.nav-name {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 25px;
+}
+
 /*----- main picture section ------*/
+
+.hero-cont {
+    margin-top: 63.33px;
+}
+
+
 .main-pic {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),
     rgba(0, 0, 0, 0.4)), 
@@ -17,17 +34,20 @@
     background-attachment: fixed;
 }
 
+
+
 .main-pic-text {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Anton', sans-serif;
 }
 
 .profile-pic {
     background-image: url('https://www.chicagotribune.com/resizer/yFMZ9O1PmiLd-Xz1CAgWuuTcyZ0=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/7SDBJS4IGFGABH6J3OF5TWNONE.jpg');
-    height: 15em;
+    height: 18em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
