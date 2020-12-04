@@ -15,12 +15,12 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <a class="navbar-brand nav-name" href="#hero"><strong>Brian Scanlon</strong></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" 
-  aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" 
+  aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+  <div class="collapse navbar-collapse" id="navbarToggler">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item">
         <a class="nav-link" href="#about"><i class="far fa-address-card"></i> About<span class="sr-only">(current)</span></a>
@@ -39,14 +39,23 @@
       </li>
     </ul>
     <span>
-            <i class="fas fa-search fa-2x d-none d-lg-inline-block"
+        <i class="fas fa-search fa-2x d-none d-lg-inline-block pr-3" id="openSearch"
             data-toggle="tooltip" data-placement="bottom"></i>
         <span class="nav-search-bar d-lg-none nav-link">Search</span>
     </span>
-    <!-- <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form> -->
+    
+    <div id="searchArea" class="overlay">
+        <a href="javascript:void(0)" id="closeSearch" class="close-nav-search text-dark">&times;</a>
+        <div class="overlay-content">
+                <div class="w-50 mx-auto">
+                    <input class="form-control mx-auto" autocomplete="off" 
+                    type="text" placeholder="Search CV for string matches" name="query" required>
+                    <button type="submit" class="bg-transparent mt-3" aria-label="search">
+                        <i class="fas fa-search fa-2x"></i>
+                    </button>
+                </div>
+        </div>
+    </div>
 
   </div>
 </nav>

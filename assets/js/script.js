@@ -23,6 +23,28 @@ $('#toTop').click(function(){
     topPage();
 });
 
+
+    function openSearchBar() {
+        let searchBar = document.getElementById("searchArea");
+        if (searchBar) {
+            searchBar.style.width = "100%";
+        }
+    }
+
+    $('#openSearch').click(function(){
+        openSearchBar();
+        });
+
+
+
+    function closeSearchBar() {
+        document.getElementById("searchArea").style.width = "0%";
+    }
+
+    $('#closeSearch').click(function(){
+        closeSearchBar();
+    });
+
 });
 
 let firstYHead = document.getElementById("nav-first-tab");

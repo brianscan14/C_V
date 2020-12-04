@@ -14,6 +14,37 @@
     font-size: 25px;
 }
 
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 2; 
+    left: 0;
+    top: 0;
+    background-color: #f8f9fac7;
+    overflow-x: hidden;
+    transition: 0.7s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 12em;
+}
+
+.overlay a {
+    text-decoration: none;
+}
+
+.overlay .close-nav-search {
+    position: absolute;
+    top: 25px;
+    right: 65px;
+    font-size: 90px;
+}
+
 /*----- main picture section ------*/
 
 .hero-cont {
