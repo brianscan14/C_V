@@ -20,7 +20,8 @@ function topPage() {
 }
 
 $('#toTop').click(function(){
-    topPage();
+    topPage();    
+
 });
 
 
@@ -108,4 +109,32 @@ function firstYear() {
     firstYHead.classList.add("active");
 
     firstYTab.classList.add("active", "show");
+}
+
+
+
+let intelDiv = document.getElementById("intel");
+let pwcDiv = document.getElementById("pwc");
+let maintDiv = document.getElementById("maint");
+let howToDiv = document.getElementById("howTo");
+
+function showIntel() {
+    howToDiv.style.display = "none";
+    pwcDiv.classList.add("testing");
+    maintDiv.classList.add("testing");
+    intelDiv.classList.toggle("testing");
+}
+
+function showPWC() {
+    howToDiv.style.display = "none";
+    intelDiv.classList.add("testing");
+    maintDiv.classList.add("testing");
+    pwcDiv.classList.toggle("testing");
+}
+
+function showColm() {
+    howToDiv.style.display = "none";
+    pwcDiv.classList.add("testing");
+    intelDiv.classList.add("testing");
+    maintDiv.classList.toggle("testing");
 }

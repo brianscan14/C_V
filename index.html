@@ -29,19 +29,19 @@
         <a class="nav-link" href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
       </li>
       <li class="nav-item px-2">
-        <a class="nav-link" href="#" ><i class="fas fa-tasks"></i> Projects</a>
+        <a class="nav-link" href="#experience" ><i class="fas fa-briefcase"></i> Work Experience</a>
       </li>
       <li class="nav-item px-2">
-        <a class="nav-link" href="#" ><i class="fas fa-briefcase"></i> Work Experience</a>
+        <a class="nav-link" href="#projects" ><i class="fas fa-tasks"></i> Projects</a>
       </li>
       <li class="nav-item px-2">
-        <a class="nav-link" href="#" ><i class="far fa-envelope"></i> Contact</a>
+        <a class="nav-link" href="#contact" ><i class="far fa-envelope"></i> Contact</a>
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
         <li class="nav-item px-2">
             <span id="openSearch">
-                <i class="fas fa-search fa-3x d-none d-lg-inline-block pr-3" data-toggle="tooltip" data-placement="bottom"></i>
+                <i class="fas fa-search fa-3x d-none d-lg-inline-block pr-3 nav-link" data-toggle="tooltip" data-placement="bottom"></i>
                 <i class="fas fa-search d-lg-none nav-link"> Search</i>
             </span>
       </li>
@@ -77,7 +77,6 @@
                         alt="Tough Penguin">
                     </div>
                     <h1 class="text-white hero-heading p-3 border-bottom w-50 mx-auto">Brian Scanlon</h1>
-                    <!-- scrolls to more info section -->
                     <div class="mx-auto mt-3">
                         <a href="#" class="p-1 text-white btn btn-outline-success" data-toggle="tooltip" data-placement="right" title="Send email">Contact Me</a>
                         <a href="assets/files/testCV.pdf" target="_blank" class="p-1 text-white btn btn-outline-success" 
@@ -106,10 +105,10 @@
 	</div>
 </div>
 
-<div class="container-fluid" >
+<div class="container-fluid my-5" id="education">
     <div class="row">
         <div class="col-6 col-sm-3  mx-auto centered" >
-            <h2 class="centered border-bottom p-3" id="education">Education</h2>
+            <h2 class="centered border-bottom p-3" >Education</h2>
         </div>
     </div>
     <div class="row my-4">
@@ -142,7 +141,6 @@
                             <div class="mt-2 text-right">
                                 <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#gradesMaster">Modules</a>
                             </div>
-                            <!-- Modal -->
                             <div class="modal fade" id="gradesMaster" tabindex="-1" aria-labelledby="modalMAster" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
@@ -655,6 +653,181 @@
             </div>
         </div>
 	</div>
+</div>
+
+<div class="container-fluid my-5">
+    <div class="row" id="experience">
+        <div class="col-12 col-md-7 mx-auto job-cont bg-secondary">
+            <div class="timeline">
+                <div class="work-content left">
+                    <div class="content" onclick="showIntel()">
+                    <h2>2017-</h2>
+                    <p>Intel</p>
+                    </div>
+                </div>
+                <div class="work-content right">
+                    <div class="content" onclick="showPWC()">
+                    <h2>2016</h2>
+                    <p>Price Waterhouse (PwC)</p>
+                    </div>
+                </div>
+                <div class="work-content left">
+                    <div class="content" onclick="showColm()">
+                    <h2>2012-2015</h2>
+                    <p>St. Colmcille's</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-5 mx-auto job-cont bg-light">
+
+            <div class="row">
+                <div class="col-12 col-lg-7 centered mx-auto">
+                    <h1 class="border-bottom p-3">Work Experience</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col px-5 pt-2">
+                    <div class="centered" id="howTo">
+                        <h3>Click on a year to see the work experience!</h3>
+                    </div>
+                    <div class="testing" id="intel">
+                        <h3>Intel Ireland</h3>
+                        <li class="py-1">did this Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, </li>
+                        <li class="py-1">did that quia laborum assumenda libero amet ducimus animi velit alias, adipisci ipsam.</li>
+                        <li class="py-1">did these quia laborum assumenda libero amet ducimus animi velit alias, adipisci ipsam.</li>
+                        <li class="py-1">and all of that too ro amet ducimus animi velit alias, adipisci ipsam.</li>
+                        <li class="pt-1">also this quia laborum assumenda libero amet ducimus animi velit alias, adipisci ipsam.</li>
+                    </div>
+                    <div class="testing" id="pwc">
+                        <h3>PwC Ireland</h3>
+                        <li class="py-1">did this Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, </li>
+                        <li class="py-1">did that quia laborum assumenda libero amet ducimus animi velit alias, adipisci ipsam.</li>
+                        <li class="py-1">did these quia laborum assumenda libero amet ducimus animi velit alias, adipisci ipsam.</li>
+                        <li class="py-1">and all of that too ro amet ducimus animi velit alias, adipisci ipsam.</li>
+                        <li class="pt-1">also this quia laborum assumenda libero amet ducimus animi velit alias, adipisci ipsam.</li>
+                    </div>
+                    <div class="testing" id="maint">
+                        <h3>St Colmcille's Nursing Home</h3>
+                        <li class="py-1">did this Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, </li>
+                        <li class="py-1">did that quia laborum assumenda libero amet ducimus animi velit alias, adipisci ipsam.</li>
+                        <li class="py-1">did these quia laborum assumenda libero amet ducimus animi velit alias, adipisci ipsam.</li>
+                        <li class="py-1">and all of that too ro amet ducimus animi velit alias, adipisci ipsam.</li>
+                        <li class="pt-1">also this quia laborum assumenda libero amet ducimus animi velit alias, adipisci ipsam.</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid" id="projects">
+    <div class="row">
+        <div class="col mr-auto">
+            <h1 class="py-4 p-5">Projects</h1>
+        </div>
+    </div>
+    <div class="row mx-5">
+        <div class="col-7 mx-auto centered">
+        <div class="row">
+        <div class="col-10 col-sm-4 mx-auto">
+            <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlMGpyu5mUU3UXHrC27ksra2GS5I5b9MwgYA&usqp=CAU" class="card-img-top" alt="gym photo">
+            <div class="card-body">
+                <h5 class="card-title">XY Fitness</h5>
+                <p class="card-text">
+                A webiste for a PT if they so wish to ever want to make one.....
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et maiores 
+                labore ducimus dolorem, placeat adipisci voluptatibus temporibus quasi, eum, 
+                </p>
+                <a href="https://xyfitness.herokuapp.com/" target="_blank" class="btn btn-primary">See Project</a>
+            </div>
+            </div>
+        </div>
+        <div class="col-10 col-sm-4 mx-auto">
+            <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFu7Yg50Dy05xGJxrgS6_0vGumwHw_tgaB7A&usqp=CAU" class="card-img-top" alt="burger photo">
+            <div class="card-body">
+                <h5 class="card-title">Gourmet Grub</h5>
+                <p class="card-text">
+                Recipe creation site where you can search recipes and or make them and upload them etc...
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et maiores 
+                labore ducimus dolorem, placeat adipisci voluptatibus temporibus quasi
+                </p>
+                <a href="https://gourmetgrub639.herokuapp.com/" target="_blank" class="btn btn-primary">See Project</a>
+            </div>
+            </div>
+        </div>
+        <div class="col-10 col-sm-4 mx-auto">
+            <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTujy0OzcnWk_JhZVPPooNy0JypEV1ClctXg&usqp=CAU" class="card-img-top" alt="mchine photo">
+            <div class="card-body">
+                <h5 class="card-title">Machine Learning Project</h5>
+                <p class="card-text">
+                This is a project that I will be doing next year, hopefully will be good...
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et maiores 
+                labore ducimus dolorem, placeat adipisci voluptatibus temporibus quasi, eum, 
+                </p>
+                <a href="#" target="_blank" class="btn btn-primary">See Project</a>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-10 col-sm-6 mx-auto">
+            <h1 class ="centered border-bottom p-3">Contact Me</h1>
+            <p class ="centered"><em>Feel free to contact me with any further queries..</em></p>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col-10 col-sm-6">
+            <form>
+            <h3 class="pb-3">Send Email</h3>
+            <div class="form-group">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your email address">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="Subject">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Content for the email.." rows="3"></textarea>
+            </div>
+            </form>
+        </div>
+        <div class="col-10 col-sm-6 border-left px-5">
+            <div class="row">
+                <div class="col-6">
+                    <div class="address">
+                    <h3 class="pb-3">Address:</h3>
+                    <p>Brian S</p>
+                    <p>44 Tallaght Street</p>
+                    <p>Tallaght</p>
+                    <p>Dublin</p>
+                    <p>D6</p>
+                </div>
+                </div>
+                <div class="col-6">
+                    <div class="phone">
+                        <h3 class="pb-3">Phone / Email:</h3>
+                        <p>0861234561</p>
+                        <p>brian@anemail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+        
+        </div>
+    </div>
 </div>
 
 <button id="toTop" title="To top" class="bg-transparent">
