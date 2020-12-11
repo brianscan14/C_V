@@ -247,7 +247,7 @@ html {
   height: 25px;
   right: -12px;
   background-color: rgb(179, 173, 173);
-  border: 4px solid rgb(255, 91, 85);
+  border: 4px solid rgb(238, 205, 19);
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -360,6 +360,12 @@ html {
     transition-duration: 0.3s;
     cursor: pointer; 
 }
+
+.project-card a {
+    text-decoration: none;
+    color: #000000;
+}
+
 
 /* footer ------------- */
 
