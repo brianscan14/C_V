@@ -30,12 +30,14 @@ body {
     z-index: 1;
     border: none;
     outline: none;
+    background-color: #2b2a2a;
 }
 
 #toTop:hover {
-    opacity: 1;
+    opacity: 0.8;
+    background-color: grey;
     transition: ease-in-out;
-    transition-duration: 0.9s;
+    transition-duration: 0.2s;
 }
 
 html {
@@ -55,7 +57,7 @@ html {
 }
 
 .search-bar {
-    height: 50px;
+    height: 60px;
     border-radius: 25px;
 }
 
@@ -204,7 +206,7 @@ html {
 }
 
 .educ-button {
-    background-color: #979e98d2;
+    background-color: #105e1cd2;
     width: 8em;
     border-color: #979e98d2;
 }

@@ -138,3 +138,8 @@ function showColm() {
     intelDiv.classList.add("hide-work");
     maintDiv.classList.toggle("hide-work");
 }
+
+function sendEmail() {
+    document.getElementById("sendAnEmailForm").reset();
+    setTimeout(function(){ alert("Thank you for sending that mail, don't worry, it's not real! :)"); }, 1000);
+}

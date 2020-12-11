@@ -44,7 +44,7 @@
                 <i class="fas fa-search fa-3x d-none d-lg-inline-block pr-3 nav-link" data-toggle="tooltip" data-placement="bottom"></i>
                 <i class="fas fa-search d-lg-none nav-link"> Search</i>
             </span>
-      </li>
+        </li>
     </ul>
     
     
@@ -53,7 +53,7 @@
         <div class="overlay-content">
                 <div class="w-50 mx-auto">
                     <input class="form-control search-bar mx-auto" autocomplete="off" 
-                    type="text" placeholder="Search CV for string matches..." name="query" required>
+                    type="text" placeholder="This would search the CV for matches, but it can't be set up on github..." name="query" required>
                     <button type="submit" class="bg-transparent mt-3 text-white search-button" aria-label="search">
                         <i class="fas fa-search fa-3x"></i>
                     </button>
@@ -105,7 +105,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form>
+                <form id="sendAnEmailForm"> 
                 <div class="form-group">
                     <input type="email" class="form-control" id="exampleFormControlInputModalEmail" placeholder="Your email address">
                 </div>
@@ -119,7 +119,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
-                <button type="button" class="btn btn-success">Send</button>
+                <button type="button" class="btn btn-success" onclick="sendEmail()" data-dismiss="modal">Send</button>
             </div>
             </div>
         </div>
@@ -131,7 +131,7 @@
             <h2 class="p-3 border-bottom mx-auto">About Me</h2>
         </div>
         <div class="col-12">
-            <div class="row my-5">
+            <div class="row mt-5">
                 <div class="col-12 col-sm-8 mx-auto centered">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elit lorem, pharetra quis hendrerit pellentesque, feugiat at ligula. 
                     Nunc pellentesque lectus in ipsum maximus, eget elementum risus mattis. Etiam interdum vitae massa et volutpat. Nullam nibh lacus, lacinia eget feugiat id, posuere ut enim. 
@@ -177,7 +177,7 @@
                                     </p>
                                     </div>
                                     <div class="mt-2 text-right">
-                                        <a href="#" class="btn btn-secondary educ-button" data-toggle="modal" data-target="#gradesMaster">Modules</a>
+                                        <a href="#" class="btn btn-success educ-button" data-toggle="modal" data-target="#gradesMaster">Modules</a>
                                     </div>
                                     <div class="modal fade" id="gradesMaster" tabindex="-1" aria-labelledby="modalMAster" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
@@ -246,6 +246,14 @@
                                                         <span class="">A+</span>
                                                     </div>
                                                 </div>
+                                                <div class="row pt-2">
+                                                    <div class="col-8 p-0 mr-auto">
+                                                        <span class="text-left"><strong>Overall</strong></span>
+                                                    </div>
+                                                    <div class="col-4 ml-auto centered">
+                                                        <span class=""><strong>3.7 GPA</strong></span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer pr-3">
@@ -269,7 +277,7 @@
                                     
                                     </div>
                                     <div class="mt-2 text-left">
-                                        <a href="assets/files/testThesis.pdf" target="_blank" class="btn btn-secondary educ-button">Download</a>
+                                        <a href="assets/files/testThesis.pdf" target="_blank" class="btn btn-success educ-button">Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -297,7 +305,7 @@
                                     Module included lorem cliche reprehenderit, enim eiusmod high, some others ones, and then this one...
                                 </p>
                                 <p>
-                                    <u type="button" onclick="firstYear()" class="btn btn-secondary educ-button" data-toggle="modal" data-target="#bachGrades">View Grades</u>
+                                    <u type="button" onclick="firstYear()" class="btn btn-success educ-button" data-toggle="modal" data-target="#bachGrades">View Grades</u>
                                 </p>
                             </div>
                             <div class="col-10 col-lg-3 mx-auto">
@@ -309,7 +317,7 @@
                                     Module included lorem cliche reprehenderit, enim eiusmod high, some others ones, and then this one...
                                 </p>
                                 <p>
-                                    <u type="button" onclick="secondYear()" class="btn btn-secondary educ-button" data-toggle="modal" data-target="#bachGrades">View Grades</u>
+                                    <u type="button" onclick="secondYear()" class="btn btn-success educ-button" data-toggle="modal" data-target="#bachGrades">View Grades</u>
                                 </p>
                             </div>
                             <div class="col-10 col-lg-3 mx-auto">
@@ -321,7 +329,7 @@
                                     Module included lorem cliche reprehenderit, enim eiusmod high, some others ones, and then this one...
                                 </p>
                                 <p>
-                                    <u type="button" onclick="thirdYear()" class="btn btn-secondary educ-button" data-toggle="modal" data-target="#bachGrades">View Grades</u>
+                                    <u type="button" onclick="thirdYear()" class="btn btn-success educ-button" data-toggle="modal" data-target="#bachGrades">View Grades</u>
                                 </p>
                             </div>
                             <div class="col-10 col-lg-3 mx-auto">
@@ -334,7 +342,7 @@
                                     this one...
                                 </p>
                                 <p>
-                                    <u type="button" onclick="fourthYear()" class="btn btn-secondary educ-button" data-toggle="modal" data-target="#bachGrades">View Grades</u>
+                                    <u type="button" onclick="fourthYear()" class="btn btn-success educ-button" data-toggle="modal" data-target="#bachGrades">View Grades</u>
                                 </p>
                             </div>
                         </div>
@@ -411,6 +419,14 @@
                                                         <span class="pl-5">A+</span>
                                                     </div>
                                                 </div>
+                                                <div class="row pt-2">
+                                                    <div class="col-8 p-0 mr-auto">
+                                                        <span class="text-left pl-2"><strong>Overall</strong></span>
+                                                    </div>
+                                                    <div class="col-4 centered pr-0">
+                                                        <span class="pl-5"><strong>3.6 GPA</strong></span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="nav-second" role="tabpanel" aria-labelledby="nav-second-tab">
@@ -469,6 +485,14 @@
                                                     </div>
                                                     <div class="col-4 centered pr-0">
                                                         <span class="pl-5">A+</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2">
+                                                    <div class="col-8 p-0 mr-auto">
+                                                        <span class="text-left pl-2"><strong>Overall</strong></span>
+                                                    </div>
+                                                    <div class="col-4 centered pr-0">
+                                                        <span class="pl-5"><strong>3.6 GPA</strong></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -531,6 +555,14 @@
                                                         <span class="pl-5">A+</span>
                                                     </div>
                                                 </div>
+                                                <div class="row pt-2">
+                                                    <div class="col-8 p-0 mr-auto">
+                                                        <span class="text-left pl-2"><strong>Overall</strong></span>
+                                                    </div>
+                                                    <div class="col-4 centered pr-0">
+                                                        <span class="pl-5"><strong>3.6 GPA</strong></span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="nav-fourth" role="tabpanel" aria-labelledby="nav-fourth-tab">
@@ -591,6 +623,14 @@
                                                         <span class="pl-5">A+</span>
                                                     </div>
                                                 </div>
+                                                <div class="row pt-2">
+                                                    <div class="col-8 p-0 mr-auto">
+                                                        <span class="text-left pl-2"><strong>Overall</strong></span>
+                                                    </div>
+                                                    <div class="col-4 centered pr-0">
+                                                        <span class="pl-5"><strong>3.6 GPA</strong></span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="text-right pr-5 mr-3">
@@ -623,7 +663,7 @@
                                 Languages undertaken in this course include:<br> Python, JavaScript, HTML, CSS, SQL, Django & Flask.
                             </p>
                             <p class="centered">
-                                <a href="#" class="btn btn-secondary educ-button" data-toggle="modal" data-target="#gradesCode">View Grades</a>
+                                <a href="#" class="btn btn-success educ-button" data-toggle="modal" data-target="#gradesCode">View Grades</a>
                             </p>
                             <div class="modal fade" id="gradesCode" tabindex="-1" aria-labelledby="codeModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
@@ -760,6 +800,35 @@
 
     </div>
 
+        <div class="row" id="skills">
+        <div class="col-12 mx-auto col-md-10 header-cont">
+            <div class="row">
+                <div class="col-12 col-md-8 mx-auto">
+                    <h1>Skills / Interests</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8 mx-auto">
+                    <div class="progress bg-light">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress bg-light">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress bg-light">
+                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress bg-light">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress bg-light">
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="row mb-5" id="projects">
         <div class="col-11 my-3 pl-5 mx-auto">
             <div class="row header-cont">
@@ -856,7 +925,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Poker Robot</h5>
                                     <p class="card-text project-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated: next year</small></p>
+                                    <p class="card-text"><small class="text-muted">Last updated: summer 2030</small></p>
                                 </div>
                                 </div>
                             </div>
@@ -882,50 +951,6 @@
                             </div>
                         </div>
                     </div>
-                <!-- <div class="row">
-                    <div class="col-10 col-sm-4 mx-auto">
-                        <div class="card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlMGpyu5mUU3UXHrC27ksra2GS5I5b9MwgYA&usqp=CAU" class="card-img-top" alt="gym photo">
-                        <div class="card-body">
-                            <h5 class="card-title project-text">XY Fitness</h5>
-                            <p class="card-text">
-                            A webiste for a PT if they so wish to ever want to make one.....
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et maiores 
-                            labore ducimus dolorem, placeat adipisci voluptatibus temporibus quasi, eum, 
-                            </p>
-                            <a href="https://xyfitness.herokuapp.com/" target="_blank" class="btn btn-primary">See Project</a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-10 col-sm-4 mx-auto">
-                        <div class="card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFu7Yg50Dy05xGJxrgS6_0vGumwHw_tgaB7A&usqp=CAU" class="card-img-top" alt="burger photo">
-                        <div class="card-body project-text">
-                            <h5 class="card-title">Gourmet Grub</h5>
-                            <p class="card-text">
-                            Recipe creation site where you can search recipes and or make them and upload them etc...
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et maiores 
-                            labore ducimus dolorem, placeat adipisci voluptatibus temporibus quasi
-                            </p>
-                            <a href="https://gourmetgrub639.herokuapp.com/" target="_blank" class="btn btn-primary">See Project</a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-10 col-sm-4 mx-auto">
-                        <div class="card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTujy0OzcnWk_JhZVPPooNy0JypEV1ClctXg&usqp=CAU" class="card-img-top" alt="mchine photo">
-                        <div class="card-body project-text">
-                            <h5 class="card-title">Machine Learning</h5>
-                            <p class="card-text ">
-                            This is a project that I will be doing next year, hopefully will be good...
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et maiores 
-                            labore ducimus dolorem, placeat adipisci voluptatibus  
-                            </p>
-                            <a href="#" target="_blank" class="btn btn-primary">See Project</a>
-                        </div>
-                        </div>
-                    </div>
-                </div> -->
                 </div>
             </div>
         </div>
@@ -941,8 +966,8 @@
         <div class="col-12 col-sm-10 mx-auto">
             <div class="row my-5">
             <div class="col-12 col-lg-6 my-3  px-5 mx-auto">
-                <form>
-                <h3 class="pb-3">Send Email</h3>
+                <form id="sendAnEmailForm">
+                <h3 class="pb-3 centered">Send Email</h3>
                 <div class="form-group">
                     <input type="email" class="form-control" id="exampleFormControlInputEmail" placeholder="Your email address">
                 </div>
@@ -951,6 +976,9 @@
                 </div>
                 <div class="form-group">
                     <textarea class="form-control" id="exampleFormControlTextareaEmail" placeholder="Content for the email.." rows="5"></textarea>
+                </div>
+                <div class="centered">
+                    <button type="button" class="btn btn-success educ-button" onclick="sendEmail()" >Send</button>
                 </div>
                 </form>
             </div>
@@ -999,7 +1027,7 @@
 </div>
 
 <button id="toTop" title="To top" class="bg-transparent">
-    <i class="fas fa-arrow-circle-up fa-4x"></i>
+    <i class="fas fa-arrow-circle-up fa-5x"></i>
 </button>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
