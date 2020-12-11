@@ -340,6 +340,17 @@ html {
     display: none;
 }
 
+/* skills section --------------- */
+
+.progress {
+    height: 40px;
+}
+
+.progress-bar {
+    font-size: 20px;
+}
+
+
 /* projects section ----------*/
 
 .project-text {
