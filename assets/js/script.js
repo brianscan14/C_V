@@ -120,21 +120,21 @@ let howToDiv = document.getElementById("howTo");
 
 function showIntel() {
     howToDiv.style.display = "none";
-    pwcDiv.classList.add("testing");
-    maintDiv.classList.add("testing");
-    intelDiv.classList.toggle("testing");
+    pwcDiv.classList.add("hide-work");
+    maintDiv.classList.add("hide-work");
+    intelDiv.classList.toggle("hide-work");
 }
 
 function showPWC() {
     howToDiv.style.display = "none";
-    intelDiv.classList.add("testing");
-    maintDiv.classList.add("testing");
-    pwcDiv.classList.toggle("testing");
+    intelDiv.classList.add("hide-work");
+    maintDiv.classList.add("hide-work");
+    pwcDiv.classList.toggle("hide-work");
 }
 
 function showColm() {
     howToDiv.style.display = "none";
-    pwcDiv.classList.add("testing");
-    intelDiv.classList.add("testing");
-    maintDiv.classList.toggle("testing");
+    pwcDiv.classList.add("hide-work");
+    intelDiv.classList.add("hide-work");
+    maintDiv.classList.toggle("hide-work");
 }

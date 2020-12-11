@@ -43,12 +43,6 @@ html {
 }
 
 
-.testing {
-    display: none;
-}
-
-
-
 /* navbar area--------------- */
 
 .navbar{
@@ -60,6 +54,20 @@ html {
     font-size: 25px;
 }
 
+.search-bar {
+    height: 50px;
+    border-radius: 25px;
+}
+
+.search-button, .search-button:focus {
+    border: hidden;
+    outline-color: transparent;
+}
+
+.fa-search:hover {
+    cursor: pointer;
+}
+
 .overlay {
     height: 100%;
     width: 0;
@@ -67,7 +75,7 @@ html {
     z-index: 2; 
     left: 0;
     top: 0;
-    background-color: #f8f9fac7;
+    background-color: #2d2e2ec7;
     overflow-x: hidden;
     transition: 0.7s;
 }
@@ -97,11 +105,15 @@ html {
     margin-top: 63.33px;
 }
 
+.header-cont {
+    margin-top: 80px;
+}
+
 
 .main-pic {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),
     rgba(0, 0, 0, 0.4)), 
-    url('https://images.theconversation.com/files/249988/original/file-20181211-76989-1rr4jy1.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip');
+    url('https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
     height: 85vh;
     background-color: rgba(0, 0, 0, 0.801);
     background-position: center;
@@ -110,7 +122,6 @@ html {
     position: relative;
     background-attachment: fixed;
 }
-
 
 .main-pic-text {
     text-align: center;
@@ -131,6 +142,55 @@ html {
     background-attachment: fixed;
 }
 
+@media screen and (min-width: 1201px) {
+    .profile-pic {
+        width: 60%;
+        height: 25em;
+    }
+}
+
+@media screen and (min-width: 1601px) {
+    .profile-pic {
+        width: 60%;
+        height: 22em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .profile-pic {
+        width: 90%;
+        height: 20em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .profile-pic {
+        width: 95%;
+        height: 18em;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .profile-pic {
+        width: 100%;
+        height: 15em;
+    }
+}
+
+.hero-buttons {
+    width: 9em;
+    color: white;
+    border-color: white;
+}
+
+.hero-buttons:hover, .hero-buttons:active, .hero-buttons:focus {
+    width: 9em;
+    color: black;
+    border-color: white;
+    background-color: white;
+    box-shadow: 0 0 0 0.3rem rgba(143, 150, 145, 0.5);
+}
+
 
 /* education section ---------- */
 
@@ -139,9 +199,22 @@ html {
     overflow-y: hidden;
 }
 
+.btn-link {
+    color: rgb(26, 25, 112);
+}
+
+.educ-button {
+    background-color: #979e98d2;
+    width: 8em;
+    border-color: #979e98d2;
+}
+
+
 /* jobs section ----------*/
 
-
+.job-bg {
+    background-color: #2b2a2a;
+}
 
 .timeline {
   position: relative;
@@ -173,8 +246,8 @@ html {
   width: 25px;
   height: 25px;
   right: -12px;
-  background-color: white;
-  border: 4px solid #FF9F55;
+  background-color: rgb(179, 173, 173);
+  border: 4px solid rgb(255, 91, 85);
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -258,8 +331,12 @@ html {
     transition-duration: 0.3s;
     color: grey;
     box-shadow:         inset 0 0 14px #000000;
+    cursor: pointer;
 }
 
+.hide-work {
+    display: none;
+}
 
 /* projects section ----------*/
 
@@ -271,8 +348,17 @@ html {
 
 .project-image {
     object-fit: cover;
-   width: 100%;
-   height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.project-card:hover {
+    border: 1px solid rgb(114, 113, 112);
+    box-shadow: 1px 1px 7px 1px rgb(80, 79, 79);
+    background-color: rgba(255, 255, 255, 0.9);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    cursor: pointer; 
 }
 
 /* footer ------------- */
