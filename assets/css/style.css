@@ -354,6 +354,12 @@ html {
     background-color: #ad3a3a;
 }
 
+.ai-light:hover {
+    box-shadow: 1px 1px 7px 1px #ad3a3a;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
 .ai-light {
     background-color: #ad3a3a2c;
 }
@@ -366,12 +372,24 @@ html {
     background-color: #998a6a41;
 }
 
+.front-light:hover {
+    box-shadow: 1px 1px 7px 1px #998a6a;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
 .microsoft {
     background-color: #3734cf;
 }
 
 .microsoft-light {
     background-color: #3734cf36;
+}
+
+.microsoft-light:hover {
+    box-shadow: 1px 1px 7px 1px #3734cf;
+    transition: 0.7s;
+    cursor: pointer;
 }
 
 .analysis {
@@ -381,12 +399,28 @@ html {
     background-color: #4c914838;
 }
 
+.analysis-light:hover {
+    box-shadow: 1px 1px 7px 1px #4c9148;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
 .retrieval {
     background-color: #4e374c;
 }
 
 .retrieval-light {
     background-color: #4e374c3f;
+}
+
+.retrieval-light:hover {
+    box-shadow: 1px 1px 7px 1px #4e374c;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.skill-links a {
+    text-decoration: none;
 }
 
 /* projects section ----------*/
@@ -447,4 +481,11 @@ html {
     text-decoration: none;
     color: black;
     transition: 0.7s;
+}
+
+.resources a{
+    font-size: 20px;
+    text-decoration: none;
+    color: grey;
+    font-weight: 700;
 }
