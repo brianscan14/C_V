@@ -418,6 +418,17 @@ html {
 }
 
 
+/* contact section ---------- */
+
+
+.g-maps {
+    border: 2px solid rgb(114, 113, 112);
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: 0 0 20px #000000; */
+}
+
+
 /* footer ------------- */
 
 
