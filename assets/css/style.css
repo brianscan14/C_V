@@ -417,8 +417,8 @@ html {
     color: #000000;
 }
 
-@media screen and (min-width: 1201) {
-    .card-title, .card-text, .card-body {
+@media screen and (min-width: 1201px) {
+    .project-cards-big {
         padding-left: 0;
     }
 }
