@@ -147,14 +147,13 @@ html {
 @media screen and (min-width: 1201px) {
     .profile-pic {
         width: 60%;
-        height: 20em;
+        height: 29em;
     }
 }
 
 @media screen and (min-width: 1601px) {
     .profile-pic {
         width: 60%;
-        height: 22em;
     }
 }
 
