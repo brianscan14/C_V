@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
 function scrollToTop() {
     let mybutton = document.getElementById("toTop");
 

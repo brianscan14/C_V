@@ -343,7 +343,7 @@ html {
 /* skills section --------------- */
 
 .progress {
-    height: 40px;
+    height: 50px;
 }
 
 @media screen and (min-width: 696px) {
@@ -352,24 +352,44 @@ html {
     }
 }
 
+
 .ai {
     background-color: #ad3a3a;
+}
+
+.ai-light {
+    background-color: #ad3a3a2c;
 }
 
 .front {
     background-color: #998a6a;
 }
 
+.front-light {
+    background-color: #998a6a41;
+}
+
 .microsoft {
     background-color: #3734cf;
+}
+
+.microsoft-light {
+    background-color: #3734cf36;
 }
 
 .analysis {
     background-color: #4c9148;
 }
+.analysis-light {
+    background-color: #4c914838;
+}
 
 .retrieval {
     background-color: #4e374c;
+}
+
+.retrieval-light {
+    background-color: #4e374c3f;
 }
 
 /* projects section ----------*/
