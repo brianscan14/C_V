@@ -417,6 +417,12 @@ html {
     color: #000000;
 }
 
+@media screen and (min-width: 1201px) {
+    .card-title, .card-text, .card-body {
+        padding-left: 0;
+    }
+}
+
 
 /* contact section ---------- */
 
