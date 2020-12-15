@@ -297,6 +297,12 @@ html {
   border-radius: 6px;
 }
 
+@media screen and (max-width: 600px) {
+    .content {
+    padding: 20px 20px;
+    }
+}
+
 @media screen and (max-width: 800px) {
   .timeline::after {
     left: 31px;
@@ -337,7 +343,9 @@ html {
     display: none;
 }
 
+
 /* skills section --------------- */
+
 
 .progress {
     height: 50px;
