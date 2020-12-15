@@ -1,6 +1,11 @@
 $(document).ready(function() {
 
 
+    let date = new Date();
+    let today = date.toDateString();
+    document.getElementById("date").innerHTML = "(" + today + ")";
+
+
 function scrollToTop() {
     let mybutton = document.getElementById("toTop");
 

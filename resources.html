@@ -9,10 +9,122 @@
 </head>
 <body>
 
-    <div class="container-fluid bg-light body-cont">
+    <div class="container-fluid bg-light body-cont my-5 resources-cont">
         <div class="row">
-            <div class="col">
-                This me reources page boss
+            <div class="col px-5 pt-5 pb-2">
+                <h1 class="border-bottom my-2 p-2">Theory</h1>
+                <h3 class="pt-3"><strong><em>UI Design Patterns</em></strong></h3>
+                <p>
+                    <u><strong>Lazy Registration:</strong></u> This concept was essentialy used when creating the contact forms as they were simple
+                    and didn't seem too taskign to the user. Nothing was thrown onto thew user on this page, if they wanted to find
+                    out more or were interested in something they could simple click one of the buttons to see it
+                </p>
+                <p>
+                    <u><strong>Clear primary actions:</strong></u> This was utilised on buttons seen in the contact forms to 'send' the email, it is a very
+                    clear and concise command to tell the user what it will do. This is also seen with the grades buttons and the options 
+                    to see more work experience on the page.
+                </p>
+                <p>
+                    <u><strong>Hover Controls:</strong></u> The likes of the work experience content's bubbles changing background colour slightly denotes to the user
+                    that this item is indeed clickable and will cause an action of some sort to occur. This is also the case with all buttons used on 
+                    the page as their backgrounds change colour, also seen with the projects and interestes. Anything that is clickable changes the cursor
+                    to a hand which is a universal sign to the user that this item they are on is clickable.
+                </p>
+                <h3 class="pt-3"><strong><em>Usability Rules and Principles</em></strong></h3>
+                <p>
+                    <u><strong>Tiny clickable areas:</strong></u> These were avoided througghout this page, for example in the accordion for education the heading is 
+                    what highlights for the user but the entire bar will call the action if clicked, so they can not miss it. This is the same in places like the 
+                    interests section and also in the projects section, where the entire card itself will call the action.
+                </p>
+                <p>
+                    <u><strong>No way to get in touch:</strong></u> There are multiple means of getting in touch on this page and are evident right from the intial viewing of it. 
+                    There is a contact me button on the hero image which will call a modal that holds a form for the user to fill out and send a quick email straight
+                    away. There is also a cotnact section in the CV with all my details etc. if the user wants to get in touch, again offering them the chance to send a 
+                    quick email.
+                </p>
+                <p>
+                    <u><strong>No way to search:</strong></u> There is a large magnifying glass in the nav bar which the user can use to search any string on the page that they input to it. 
+                    It calls an overlay which covers the entire page and just shows the search bar, straight to what the user wants. The functionality does not work as there 
+                    is no back end database to this page but the principle is in place.
+                </p>
+                <p>
+                    <u><strong>Old Permalinks pointing nowhere:</strong></u> There are no 'dead' links on this page, everything has been tested and they all point to where they are supposed to. Also 
+                    if something fails to load properly then the text saying what it is shows up in its a place, for a example a picture.
+                </p>
+                <p>
+                    <u><strong>Long reg forms:</strong></u> All forms (contact and even the grades) are very to the point and give user exactly what they need, they fulfill exactly what is their intended
+                    purpose and do not deviate the user in any manner.
+                </p>
+                <p>
+                    <u><strong>Usability (nightmares):</strong></u> Popups are used for better quality viewing for the user, they are easily closed, and not easily clicked by accident. No visual noise and all the 
+                    content has a logical flow as a CV would. No blocks are laying on top of each other, even on smaller screens.
+                </p>
+                 <h3 class="pt-3"><strong><em>Gestalt Laws</em></strong></h3>
+                <p>
+                    <u><strong>Pragnaz:</strong></u> The entire page is kept relatively simple, with not too much text, simple links etc. for the user if they do want to see more content. Otherwise they can leave 
+                    things as is, a modest hero image is used, background not too distracting but it is work-like, forms etc. are kept poignant, as a CV should be
+                </p>
+                <p>
+                    <u><strong>Continuity:</strong></u> An example of this use on the page is where the years of education are listed chronologically reversed, with the newest courses coming first.
+                    Then when the user clicks into a course with many years this is still maintained, however a normal sort is used here as this is the way most people would read it.
+                </p>
+                <p>
+                    <u><strong>Figure / Ground:</strong></u> In any of the pop ups there is enough contrast from background etc, the content is easily readable but the user also knows that it is easily clicked 
+                    out of if they wish to do so. The links seen on the hero image are clearly visible to the user and in contrast to its background. 
+                    All of the Grades are a readable layout, the project cards go to the actual project’s page in another tab and leave you at the CV page.
+                </p>
+                <p>
+                    <u><strong>Isomorphic correspondence:</strong></u> Links used throughout the page are buttons, all the headings are underlined, so there is no confusion there. The background changes on hovers, as 
+                    well as the cursor which also tells the user that this item is clickable.
+                </p>
+                <p>
+                    <u><strong>Figure / Ground:</strong></u> This was used for education section, where these items are essentially inn a group ebcause they come from the same background. This is also the case in the skills 
+                    section and the project sections too.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col p-5 resource-links">
+                <h1 class="border-bottom mb-2 p-2">Resources used on Page</h1>
+                <h3 class="pt-3"><strong><em>Bootstrap 4 (BS4)</em></strong></h3>
+                <p>
+                    <u><strong><a href="https://getbootstrap.com/docs/4.0/layout/overview/">Layout:</a></strong></u> The BS4 cols and rows layout method was used throughout this page, it is extremely useful when designing
+                    a page that is going to be responsive to all screen sizes.
+                </p>
+                <p>
+                    <u><strong><a href="https://getbootstrap.com/docs/4.0/components/modal/">Modal:</a></strong></u> Modals were a very poignant part of this page as they were used anywhere that I wanted to show the user a bit
+                    more detail, as seen with the view grades and popup contact form. It is very handy to use when space is limited and ore detail is needed.
+                </p>
+                <p>
+                    <u><strong><a href="https://getbootstrap.com/docs/4.0/components/collapse/#accordion-example">Accordion:</a></strong></u> The BS4 accordion was used in the education section to show the user my degrees but in a more interactive manner. It certainly
+                     helped with the aesthetics of the page and gives a more interactive expereince for the user.
+                </p>
+                <p>
+                    <u><strong><a href="https://getbootstrap.com/docs/4.0/components/card/">Cards:</a></strong></u> BS4 cards were used in the skills section as they offe a very consise way to show the user a glimpse of each project and also
+                    fill them in with a little detail, if it has caught their interest then they can simply click it to see more.
+                </p>
+                <p>
+                    <u><strong><a href="https://getbootstrap.com/docs/4.0/components/progress/">Progress Bars:</a></strong></u> The skills utilises BS4's progress bars as a simpel yet effective manner for showing the level that I was at for each skill 
+                    that is listed on the CV.
+                </p>
+                <p>
+                    All BS4 items were then modified as needed to fit the content of the page, but the intitial ground work that they complete is very time saving.
+                </p>
+                <h3 class="pt-3"><strong><em>Other</em></strong></h3>
+                
+                <p>
+                    <u><strong><a href="https://www.w3schools.com/">WE3 Schools:</a></strong></u> This was utlised for the jobs experience section timeline seen on the page and also to learn how to use some of the javascript 
+                    functions seen used on the page.
+                </p>
+                <p>
+                    <u><strong><a href="https://fontawesome.com/">Font Awesome</a></strong></u> Used icons from this site throughout the page that users would be more familiar with.
+                </p>
+                <p>
+                    <u><strong><a href="https://www.google.com/maps/place/Cavan,+Ireland/@53.9866139,-7.3905674,13z/data=!3m1!4b1!4m5!3m4!1s0x485e0c2d62912eeb:0xa00c7a997317270!8m2!3d53.9897186!4d-7.3633319">Google Maps</a></strong></u> Was used to give my 'address', the API version was not used as the functionality of the actual maps was not what was most important.
+                </p>
+                <p>
+                    Pictures on the page These were taken from sites such as <a href="https://www.pexels.com/">Pexel</a> and <a href="https://www.google.com/imghp?hl=en">google images</a>.
+                </p>
             </div>
         </div>
     </div>

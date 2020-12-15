@@ -491,9 +491,18 @@ html {
     transition: 0.7s;
 }
 
-.resources a{
+.resources, .resources a{
     font-size: 20px;
     text-decoration: none;
     color: grey;
     font-weight: 700;
 }
+
+
+/* resources page ---------- */
+
+
+.resources-cont {
+    min-height: 90vh;
+}
+
